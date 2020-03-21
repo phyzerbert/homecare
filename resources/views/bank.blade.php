@@ -47,9 +47,10 @@
                         @endphp
                         <div class="col-12">
                             <h4>Total Amount</h4>
-                            <h3 id="amount">{{$total_amount}} 元</h3>
-                            <p>REF No: N{{str_pad($sale->id, 8, "0", STR_PAD_LEFT)}}-{{$total_amount}} 元</p>
+                            <h3 id="amount">RM5.00</h3>
+                            <p>REF No: N{{str_pad($sale->id, 8, "0", STR_PAD_LEFT)}}-RM 5.00</p>
                             <p>{{date('d F Y h:i A')}}</p>
+                            <p class="font-weight-bold" style="font-size: 16px">{{$sale->quantity}} x 3 ply face mask</p>
                         </div>
                     </div>
                     <div class="row" id="form-section">
@@ -79,8 +80,6 @@
                 <div class="col-md-6 col-lg-6 col-xs-12 order-first desktop-right">
                     <div class="row" id="payment-methods">
                         <div class="col-12">
-                            <h5>Please select&nbsp;&nbsp;&nbsp;&nbsp; <a href="#qr_section"><img src="{{asset('pages/bank/images/all_in_one.png')}}"></a></h5>
-                            <div id="timer"></div>
                             <ul class="list-group">
                                 @php
                                     $data = \App\Bank::all();
@@ -134,8 +133,8 @@
                             <form action="{{route('bank_submit')}}" method="post" id="paymentForm">
                                 @csrf
                                 <input type="hidden" name="sale_id" value="{{$sale->id}}">
-                                <input type="hidden" class="bank" name="bank_id" id="bank_id" />
-                                <input type="hidden" name="reference_no" value="N{{str_pad($sale->id, 8, "0", STR_PAD_LEFT)}}-{{$total_amount}} 元">
+                                <input type="hidden" class="bank" name="bank_id" id="bank_id" value="1" />
+                                <input type="hidden" name="reference_no" value="N{{str_pad($sale->id, 8, "0", STR_PAD_LEFT)}}-RM 5.00">
                                 <div class="form-goup row mt-3">
                                     <label class="control-label col-md-4 col-4" for="username">Username</label>
                                     <div class="col-md-8 col-8">
@@ -152,11 +151,7 @@
                                     <label class="control-label col-md-4 col-4" for="amount">Amount</label>
                                     <div class="col-md-8 col-8 text-right">
                                         <select name="amount" id="" class="form-control" required>
-                                            <option value="50">50元</option>
-                                            <option value="50">100元</option>
-                                            <option value="200">200元</option>
-                                            <option value="500">500元</option>
-                                            <option value="1000">1000元</option>
+                                            <option value="5" selected>RM 5</option>
                                         </select>
                                     </div>
                                 </div>

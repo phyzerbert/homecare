@@ -219,14 +219,6 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 col-xs-12 row_padding">
-                                        <p class="input_title_1">PostCode</p>
-                                        <p class="input_title_2">
-                                            <input id="ic" name="postcode" class="gui-input" placeholder="PostCode">
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 col-xs-12 row_padding">
                                         <p class="input_title_1">Phone Number *</p>
                                         <p class="input_title_2">
                                             <input id="phone_number" name="phone_number" class="gui-input" placeholder="Phone Number" required />
@@ -241,12 +233,20 @@
                                         </p>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 row_padding">
+                                        <p class="input_title_1">PostCode</p>
+                                        <p class="input_title_2">
+                                            <input id="ic" name="postcode" class="gui-input" placeholder="PostCode">
+                                        </p>
+                                    </div>
+                                </div>
                                 @php
                                     $total_price = $sale->price * $sale->quantity;
                                 @endphp
                                 <div class="row">
                                     <div class="col-md-12 col-xs-12 row_padding">
-                                        <p style="font-size: 15px; color: #555;font-weight: bold;text-align: right;">Total: <span style="color: #cd0000">&nbsp;{{$total_price}} 元</span></p>
+                                        <p style="font-size: 16px; color: #555;font-weight: bold;text-align: right;"><span style="color: #cd0000">&nbsp;{{$sale->quantity}} Boxed of 3 ply mask</span></p>
                                     </div>
                                 </div>
                                 <div class="row">
