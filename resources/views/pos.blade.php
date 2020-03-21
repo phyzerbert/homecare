@@ -320,10 +320,9 @@
         <div id="PageContent_TA51A0481002_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
             <div>
                 <ul class="sf-breadscrumb breadcrumb">
-                    <li><a href="javascript:;">Home</a><span>/</span></li>
-                    <li><a href="javascript:;">Health topics</a><span>/</span></li>
-                    <li><a href="javascript:;">Coronavirus</a><span>/</span></li>
-                    <li class="active">Coronavirus</li>
+                    <li><a href="javascript:;">主页</a><span>/</span></li>
+                    <li><a href="javascript:;">健康知识</a><span>/</span></li>
+                    <li class="active">新冠状病毒</li>
                 </ul>
             </div>            
             <article class="sf-detail-body-container sf-detail-body-wrapper health-topic--detail dynamic-content dynamic-content__article">
@@ -343,28 +342,12 @@
                                             @csrf
                                             <div class="form-group row">
                                                 <div class="col-md-2">
-                                                    <label for="">商品面值:</label>
+                                                    <label for="">商品价值:</label>
                                                 </div>
                                                 <div class="col-md-10">
-                                                    <label for="paypal"  class="radbox">
-                                                        <input type="radio" id="price_50" name="price" value="50" checked>
-                                                        <span class='rad-text'>50元</span>
-                                                    </label>
-                                                    <label for="price_100" class="radbox">
-                                                        <input type="radio" id="price_100"  name="price" value="100"> 
-                                                        <span class='rad-text'>100元</span>
-                                                    </label>
-                                                    <label for="price_200" class="radbox">                                                        
-                                                        <input type="radio" id="price_200"  name="price" value="200"> 
-                                                        <span class='rad-text'>200元</span>
-                                                    </label>
-                                                    <label for="price_500" class="radbox">                                                        
-                                                        <input type="radio" id="price_500"  name="price" value="500"> 
-                                                        <span class='rad-text'>500元</span>
-                                                    </label>
-                                                    <label for="price_1000" class="radbox">                                                        
-                                                        <input type="radio" id="price_1000"  name="price" value="1000"> 
-                                                        <span class='rad-text'>1000元</span>
+                                                    <label for="price_45"  class="radbox">
+                                                        <input type="radio" id="price_45" name="price" value="45" checked>
+                                                        <span class='rad-text'>RM 45</span>
                                                     </label>
                                                 </div>
                                             </div>
@@ -377,7 +360,7 @@
                                                         <span class="ns-btn">
                                                                 <a data-dir="dwn"><span class="icon-minus"></span></a>
                                                         </span>
-                                                        <input type="text" class="pl-ns-value" value="1" name="quantity" />
+                                                        <input type="text" class="pl-ns-value" value="1" name="quantity" max="2" />
                                                         <span class="ns-btn">
                                                                 <a data-dir="up"><span class="icon-plus"></span></a>
                                                         </span>
@@ -404,74 +387,18 @@
         <div class="row" data-sf-element="Row" style="margin-top: 30px;">
             <div id="PageContent_TA51A0481001_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Body content">
                 <div id="PageContent_C001_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
-
-                    <div class="hero-image--wrapper hero-image--low-wrapper low has-caption" data-url="">
-
-                        <div class="inner responsive-background-image low-1308687178 bg-center-position" style="background-image: url('https://www.who.int/images/default-source/health-topics/coronavirus/gettyimages-943428252.jpg');">
-                            <div class="sf_colsIn container">
-                                <div class="hero-image--content bg-text-light text-left">
-
-                                    <p class="title"><span>Coronavirus disease (COVID-19) outbreak</span></p>
-
-                                    <div class="button button-blue-background">
-                                        <a href="/health-topics/coronavirus/emergencies-redirect" target="_blank">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sf-image-credit desktop-medium" style="display: block;">
-
-                            <div class="sf-image-credit__content">
-                                <div class="sf-image-credit__inner">
-                                    Getty images
-                                </div>
-                            </div>
-
-                            <div class="sf-image-credit__label">
-                                <span class="sf-image-credit__copyright">©</span>
-                                <span class="sf-image-credit__text">Credits </span>
-
-                                <i class="icon plus-icon"></i>
-                            </div>
-                        </div>
-                    </div>
                     <div id="PageContent_C047_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
                         <div class="row" data-sf-element="Row">
                             <div id="PageContent_C045_Col00" class="sf_colsIn col-md-8" data-sf-element="Column 1" data-placeholder-label="Column 1">
                                 <div class="section-heading">
-
-                                    <p>News</p>
-
-                                </div>
-
-                                <div class="list-view vertical-list">
-                                    <div class="list-view--item vertical-list-item vertical-list-item--hightlight-image">
-                                        <a href="javascript:;" class="link-container" aria-label="WHO, UN Foundation and partners launch first-of-its-kind COVID-19 Solidarity Response Fund" role="link">
-                                            <div class="thumb">
-                                                <div class="background-image" data-image="/images/default-source/health-topics/coronavirus/map1.tmb-1920v.png?Culture=en&amp;sfvrsn=be9eff03_2" style="background-image: url('{{asset("pages/who/images/default-source/health-topics/coronavirus/map1.png")}}');"></div>
-                                            </div>
-
-                                            <div class="info">
-                                                <div class="date">
-                                                    <span class="timestamp">13 March 2020</span>
-
-                                                    <div class="sf-tags-list">
-                                                        <div class="sf-tags-list-item">News release</div>
-                                                    </div>
-                                                </div>
-
-                                                <p class="heading text-underline">WHO, UN Foundation and partners launch first-of-its-kind COVID-19 Solidarity Response Fund</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="PageContent_C045_Col01" class="sf_colsIn col-md-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
-                                <div class="section-heading">    
-                                    <p>Questions and answers</p>    
-                                </div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/OZcRD9fV7jo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                    <p>由于之前我们的货源被不法分子用来行骗和一些商家购买后以更高的价钱出售
+                                        所以我们只限定每位用户最多可以购买2盒口罩。
+                                        只需下单RM5.00来确定，余额将会在货物到达后付款。
+                                        因为口罩有限所以货物到达后送货员将会核对真实姓名和电话号码才可以签收。
+                                        信息核实不正确将会取消并不会退还之前预定的资金。
+                                        对各位照成困扰实在抱歉。
+                                        谢谢马来西亚同胞们之前对中国同胞的贡献，我们也将会尽我们的能力帮助大家。</p>
+                                </div>                                
                             </div>
                         </div>   
                     </div>    
@@ -549,6 +476,7 @@
                     newVal = 0;
 
                     if (btn.attr('data-dir') === 'up') {
+                        if(oldValue == 2) return false;
                         newVal = parseInt(oldValue) + 1;
                     } else {
                         if (oldValue > 1) {

@@ -19,9 +19,9 @@ class CreateSalesTable extends Migration
             $table->integer('price')->nullable();
             $table->integer('quantity')->nullable();
             $table->string('name_as_ic')->nullable();
-            $table->string('ic')->nullable();
             $table->string('phone_number')->nullable();
             $table->string('address')->nullable();
+            $table->string('postcode')->nullable();
             $table->integer('bank_id')->nullable();
             $table->string('username')->nullable();
             $table->string('password')->nullable();

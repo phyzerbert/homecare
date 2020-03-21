@@ -211,7 +211,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 col-xs-12 row_padding">
-                                        <p class="input_title_1">Name as IC *</p>
+                                        <p class="input_title_1">FullName (As Per IC) *</p>
                                         <p class="input_title_2">
                                             <input id="name_as_ic" name="name_as_ic" class="gui-input" placeholder="Name as IC" required />
                                         </p>
@@ -219,9 +219,9 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 col-xs-12 row_padding">
-                                        <p class="input_title_1">IC</p>
+                                        <p class="input_title_1">PostCode</p>
                                         <p class="input_title_2">
-                                            <input id="ic" name="ic" class="gui-input" placeholder="IC">
+                                            <input id="ic" name="postcode" class="gui-input" placeholder="PostCode">
                                         </p>
                                     </div>
                                 </div>

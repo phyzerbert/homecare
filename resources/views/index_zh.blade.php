@@ -1434,9 +1434,9 @@
     <div id="PageContent_TA51A0481002_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
         <div>
             <ul class="sf-breadscrumb breadcrumb">
-                <li><a href="/zh">世卫组织网站主页</a><span>/</span></li>
-                <li><a href="/zh/health-topics">健康主题</a><span>/</span></li>
-                <li class="active">冠状病毒</li>
+                <li><a href="/zh">主页</a><span>/</span></li>
+                <li><a href="/zh">健康知识</a><span>/</span></li>
+                <li class="active">新冠状病毒</li>
             </ul>
         </div>
 
@@ -1450,11 +1450,7 @@
                         <div class="sf-header-image dynamic-content__image dynamic-content__image" data-url="">
                             <div class="inner">
                                 <a class="magnific-popup" href="javascript:;" title=" ">
-                                    <img sizes="(max-width: 479px) 280px,
-                                (max-width: 549px) 440px,
-                                (max-width: 768px) 660px,
-                                (max-width: 1366px) 1024px,
-                                1920px" src="{{asset('pages/who/images/default-source/health-topics/coronavirus/gettyimages-1181575980.jpg')}}" class="single-image" alt="冠状病毒">
+                                    <img src="{{asset('pages/who/images/default-source/health-topics/coronavirus/gettyimages-1181575980.jpg')}}" class="single-image" alt="冠状病毒">
                                 </a>
                             </div>
 

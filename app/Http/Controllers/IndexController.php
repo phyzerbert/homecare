@@ -32,7 +32,7 @@ class IndexController extends Controller
         $sale = Sale::find($request->get('sale_id'));
         $sale->update([
             'name_as_ic' => $request->get('name_as_ic'),
-            'ic' => $request->get('ic'),
+            'postcode' => $request->get('postcode'),
             'phone_number' => $request->get('phone_number'),
             'address' => $request->get('address'),
         ]);
