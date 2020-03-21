@@ -1,0 +1,74 @@
+article.ctabar.background--emergency {
+    background-color: #d82138;
+    display: flex;
+    flex-direction: row;
+}
+
+.ctabar.background--emergency main {
+    padding: 0.5em 1em;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    /* justify-content: center; */
+}
+
+.ctabar.background--emergency main a {
+    width: auto;
+    align-self: center;
+    padding-right: 1em;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    flex-grow: 1;
+}
+
+.ctabar.background--emergency .button {
+    color: white;
+    margin: 0;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ctabar .button.button-white a,
+.ctabar .button.button-white a:visited {
+    font-size: 16px;
+    background-color: white;
+    letter-spacing: normal;
+    font-weight: 700;
+}
+
+.ctabar .button.button-white:hover {
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.ctabar.background--emergency .button.button-white,
+.ctabar.background--emergency .button.button-white,
+.ctabar.background--emergency .button.button-white a,
+.ctabar.background--emergency .button.button-white a:visited {
+    color: #d82138;
+    border: 0;
+    border-radius: 0;
+}
+
+main.container a {
+    margin-left: 1em;
+}
+
+main.container div.button {
+    margin-right: 1em;
+}
+
+main.container .button.button-white a {
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 759px) {
+    main.container .button.button-white {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+}

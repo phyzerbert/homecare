@@ -1,0 +1,481 @@
+@font-face {
+  font-family: 'HelveticaNeueMedium';
+  src:url('../fonts/HelveticaNeueMedium.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src:url('../fonts/HelveticaNeue.ttf')  format('truetype');
+}
+
+body{
+    font-family: HelveticaNeue;
+}
+
+#ads {
+    display: none;
+}
+
+#desktop-line {
+  border: 2px solid #bf1e2e;
+  box-shadow: 0px 1px 2px 0px #ccc;
+  margin: 0px 0px;
+}
+
+#logo-section img {
+    width: 50%;
+    margin: 25px 0px;
+}
+
+.desktop-timer {
+    display: block;
+    text-align: right;
+}
+
+.desktop-timer #timer {
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+#desktop-banner {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+#desc-section h4 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#desc-section h3 {
+    color: #28A745;
+    font-family: HelveticaNeueMedium;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#desc-section p {
+    margin: 0px 0px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#desc-section {
+    margin-bottom: 30px;
+}
+
+#form-section label {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+#form-section input {
+    border-radius: 0px;
+}
+
+#payment-methods h5 {
+    background-color: #EDE6E6;
+    font-size: 16px;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+#payment-methods ul li img {
+    width: 60%;
+    float: right;
+}
+
+#payment-methods ul li label {
+    font-size: 15px;
+    font-family: HelveticaNeueMedium;
+    margin-left: 10px;
+}
+
+#floating-amount {
+    display: none;
+}
+
+#payment-methods .list-group-item {
+    padding: 8px 20px;
+    border-radius: 0px;
+}
+
+.radio-item {
+  display: inline-block;
+  position: relative;
+}
+
+.radio-item input[type='radio'] {
+  display: none;
+}
+
+.radio-item label {
+  color: #666;
+  font-weight: normal;
+  margin-top: -8px;
+    color: #000;
+
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin: 0 5px 0 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 11px;
+  border: 2px solid #39B54A;
+  background-color: transparent;
+}
+
+.radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 8px;
+  left: 13px;
+  content: " ";
+  display: block;
+  background: #39B54A;
+}
+
+#desktop-note {
+    margin-top: 50px;
+    font-size: 14px;
+    color: #8C8080;
+    font-style: normal;
+}
+
+#mobile-note {
+  display: none;
+}
+
+#button-section {
+  display: none;
+}
+
+#payment-methods {
+  margin-bottom: 80px;
+}
+
+#desktop-button-section {
+  display: block;
+}
+
+#desktop-button-section .card {
+    background-color: #EDE6E6;
+    border-radius: 0px;
+    border: none;
+    padding: 20px 25px;
+    margin-top: 5%;
+}
+
+#desktop-button-section .card p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#desktop-button-section button {
+    font-family: HelveticaNeueMedium;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 90%;
+    margin-left: auto;
+}
+
+#desktop-button-section a {
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+    color: #847a7a;
+}
+
+@media(max-width: 970px){
+    #logo-section {
+      text-align: center;
+      padding: 0px 20px;
+    }
+
+    #logo-section img {
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    #ads {
+        border-top: 3px solid #bf1e2e;
+        display: block;
+    }
+
+    #desc-section {
+        text-align: center;
+        padding: 10px 0px;
+        background-color: #dedede;
+        margin-bottom: 0px;
+    }
+
+    #desc-section h4 {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    #desc-section h3 {
+        font-weight: bold;
+        color: #39b54a;
+        margin: 0px 0px;
+        margin-bottom: 10px;
+    }
+
+    #desc-section em {
+        font-style: normal;
+        font-size: 12px;
+        margin: 0px 0px;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    #desc-section p {
+        font-size: 12px;
+        margin: 0px 0px;
+    }
+
+    #form-section {
+        background-color: #dedede;
+        padding-bottom: 12px;
+    }
+
+    #form-section label {
+        font-size: 12px;
+        font-family: HelveticaNeueMedium;
+        margin-bottom: 2px;
+    }
+
+    #form-section .form-group {
+        margin-bottom: 5px;
+    }
+
+    #form-section .form-group input {
+        border: none;
+        border-radius: 0px;
+    }
+
+    #payment-methods {
+        margin: 20px 0px;
+    }
+
+    #payment-methods h5 {
+        font-size: 12px;
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        padding: 0px 0px;
+        margin-bottom: .5rem;
+    }
+
+    #payment-methods .list-group-item {
+        padding: 6px 10px;
+        border-radius: 0px;
+        font-size: 12px;
+        font-family: HelveticaNeueMedium;
+        cursor: pointer;
+    }
+
+    #payment-methods .list-group-item img {
+        width: 100%;
+    }
+
+    #payment-methods .list-group-item label {
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+
+    #payment-methods .list-group-item .col-9{
+      padding-top: 5px;
+    }
+
+    #payment-methods .col-12{
+      padding: 0px 0px;
+    }
+
+    #payment-methods .list-group-item input {
+        margin-right: 5px;
+    }
+
+    #button-section p {
+        font-size: 13px;
+        line-height: 18px;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    /*
+    #button-section #timer {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    */
+
+    #timer {
+      float: right;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    #button-section button {
+        border-radius: 0px;
+      padding: 14px 0px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    #button-section a {
+        margin: 15px 0px;
+        display: inline-block;
+        color: #888;
+        font-size: 14px;
+    }
+
+    #button-section h5 {
+      text-align: justify;
+        font-size: 13px;
+        color: #888;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+
+    #floating-amount {
+        position: fixed;
+        top: 0px;
+        background-color: #ddd;
+        width: 100%;
+        text-align: center;
+        z-index: 100;
+        padding: 10px 0px;
+        box-shadow: 0px 0px 2px 0px #666;
+        padding-top: 4px;
+    }
+
+    #floating-amount h5 {
+        margin: 0px 0px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #39B54A;
+        float: right;
+    }
+
+    #floating-amount p {
+        width: 100%;
+        margin: 0px 0px;
+        text-align: right;
+        margin-left: -15px;
+        font-size: 12px;
+    }
+
+    #floating-amount img {
+        width: 25%;
+        float: left;
+    }
+
+    #floating-amount em {
+        float: right;
+        font-style: normal;
+        font-size: 12px;
+    }
+
+    #minutes {
+        background-color: #efefef;
+        color: #333;
+        padding: 5px 5px;
+        border-radius: 4px;
+        font-size: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        font-family: HelveticaNeueMedium;
+        margin-right: 5px;
+    }
+
+    #seconds {
+        background-color: #efefef;
+        color: #333;
+        padding: 5px 5px;
+        border-radius: 4px;
+        font-size: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        font-family: HelveticaNeueMedium;
+        margin-left: 5px;
+    }
+
+    .radio-item {
+      display: inline-block;
+      position: relative;
+    }
+
+    .radio-item input[type='radio'] {
+      display: none;
+    }
+
+    .radio-item label {
+      color: #666;
+      font-weight: normal;
+      margin-top: -8px;
+      color: #000;
+      margin-left: 0px !important;
+    }
+
+    .radio-item label:before {
+      content: " ";
+      display: inline-block;
+      position: relative;
+      top: 5px;
+      margin: 0 5px 0 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 11px;
+      border: 2px solid #39B54A;
+      background-color: transparent;
+    }
+
+    .radio-item input[type=radio]:checked + label:after {
+      border-radius: 11px;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      content: " ";
+      display: block;
+      background: #39B54A;
+    }
+
+    #desktop-banner {
+      display: none;
+    }
+
+    .desktop-timer {
+      display: none;
+    }
+
+    #desktop-line {
+      display: none;
+    }
+
+    #desktop-note {
+      display: none;
+    }
+
+    #mobile-note {
+      display: block;
+    }
+
+    #button-section {
+      display: block;
+    }
+
+    #desktop-button-section {
+      display: none;
+    }
+}
