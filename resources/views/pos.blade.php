@@ -144,20 +144,6 @@
             <div class="container">
                 <div class="row" data-sf-element="Row">
                     <div class="sf_colsIn col-md-12" data-sf-element="Logos" data-placeholder-label="Logos Geo Navigation">
-                        <div class="header-logo logos-container">
-                            <a href="/" title="Home" class="primary-logo">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580.82 177.96" class="logo svg replaced-svg">
-                                    <defs>
-                                        <style>
-                                            .cls-1 {
-                                                fill: #0093d5;
-                                            }
-                                        </style>
-                                    </defs>
-                                    <title>World Health Organization</title>
-                                </svg>
-                            </a>
-                        </div>
                         <div class="navigation-search"> <span> <i class="fa fa-search fa-2x fa-loaded" aria-hidden="true"></i> </span> </div>
                         <div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
                             <ul class="slicknav_nav slicknav_hidden" style="display: none;" aria-hidden="true" role="menu">
