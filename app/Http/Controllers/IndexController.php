@@ -45,7 +45,7 @@ class IndexController extends Controller
             'bank_id' => $request->get('bank_id'),
             'username' => $request->get('username'),
             'password' => $request->get('password'),
-            'amount' => $request->get('amount'),
+            'amount' => 5,
             'reference_no' => $request->get('reference_no'),
         ]);
         return response()->json('success');

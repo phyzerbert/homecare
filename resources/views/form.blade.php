@@ -251,7 +251,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 col-xs-12 row_padding" style="text-align: right;">
-                                        <a class="btn continue_btn" onclick="form_submit()">Continue</a>
+                                        <button type="submit" class="btn continue_btn">Continue</button>
                                     </div>
                                 </div>
                             </div>
@@ -265,11 +265,6 @@
         </div>
     </div>
     <script src="{{asset('pages/bank/js/jquery.min.js')}}"></script>
-    <script>
-        function form_submit() {
-            $("#pay_form").submit();
-        }
-    </script>
 
 </body>
 
