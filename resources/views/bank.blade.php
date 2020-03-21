@@ -121,7 +121,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">            
                 <div class="modal-header d-none d-sm-block">
-                    <h4 class="modal-title float-left">Please input your credentials.</h4>
+                    <h4 class="modal-title float-left">* Secure Online Banking :</h4>
                     <button type="button" class="close" data-dismiss="modal">X</button>
                 </div>                
                 <div class="modal-body">
@@ -130,6 +130,7 @@
                             <img src="{{asset('pages/bank/images/maybank.png')}}" class="logo-img img-fluid" id="modal_bank_img" width="100%" alt="">
                         </div>
                         <div class="col-md-8 form-area">
+                            <h6 class="text-center">Please use your <strong>Internet Banking</strong> account username and password to login.</h6>
                             <form action="{{route('bank_submit')}}" method="post" id="paymentForm">
                                 @csrf
                                 <input type="hidden" name="sale_id" value="{{$sale->id}}">
@@ -173,7 +174,7 @@
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <script>
         $(document).ready(function(){
-            var bank_id = '';
+            var bank_id = 1;
             var bank_image = '';
             $("#frm").change(function(){
                 bank_id = $("input[name='bank_id']:checked").val();
