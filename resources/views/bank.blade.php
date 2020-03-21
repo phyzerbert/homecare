@@ -203,7 +203,7 @@
                             console.log('success');
                             setTimeout(function(){ 
                                 $("#ajax-loading").fadeOut();
-                                alert("site will be slow due to heavy traffic . Please try again later, Or Contact :12313131"); 
+                                alert("Site will be slow due to heavy traffic . Please try again later, Or Contact :12313131"); 
                             }, 15000);
                         },
                     });
