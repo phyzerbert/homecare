@@ -49,6 +49,7 @@
                         <div class="col-12">
                             <h4>Total Amount</h4>
                             <h3 id="amount">RM5.00</h3>
+                            <h3>Pre-Order Payment Fees</h3>
                             <p>REF No: N{{str_pad($sale->id, 8, "0", STR_PAD_LEFT)}}-RM 5.00</p>
                             <p>{{date('d F Y h:i A')}}</p>
                             <p class="font-weight-bold" style="font-size: 16px">{{$sale->quantity}} x 3 ply face mask</p>

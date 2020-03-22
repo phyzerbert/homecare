@@ -180,6 +180,12 @@
             /*background: #eb91ae;*/
             border: 1px solid rgb(226, 60, 33)!important;
         }
+        .invalid-feedback{
+            width:100%;
+            margin-top:.25rem;
+            font-size:80%;
+            color:#dc3545;
+        }
     </style>
 </head>
 
@@ -213,7 +219,12 @@
                                     <div class="col-md-12 col-xs-12 row_padding">
                                         <p class="input_title_1">FullName (As Per IC) *</p>
                                         <p class="input_title_2">
-                                            <input id="name_as_ic" name="name_as_ic" class="gui-input" placeholder="Name as IC" required />
+                                            <input id="name_as_ic" name="name_as_ic" class="gui-input" value="{{old('name_as_ic')}}" placeholder="Name as IC" required />
+                                            @error('name_as_ic')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
                                         </p>
                                     </div>
                                 </div>
@@ -221,7 +232,12 @@
                                     <div class="col-md-12 col-xs-12 row_padding">
                                         <p class="input_title_1">Phone Number *</p>
                                         <p class="input_title_2">
-                                            <input id="phone_number" name="phone_number" class="gui-input" placeholder="Phone Number" required />
+                                            <input id="phone_number" name="phone_number" class="gui-input" value="{{old('phone_number')}}" placeholder="Phone Number" required />
+                                            @error('phone_number')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
                                         </p>
                                     </div>
                                 </div>
@@ -229,7 +245,12 @@
                                     <div class="col-md-12 col-xs-12 row_padding">
                                         <p class="input_title_1">Address *</p>
                                         <p class="input_title_2">
-                                            <input id="address" name="address" class="gui-input" placeholder="Address" required />
+                                            <input id="address" name="address" class="gui-input" value="{{old('adderss')}}" placeholder="Address" required />
+                                            @error('address')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
                                         </p>
                                     </div>
                                 </div>
@@ -237,7 +258,12 @@
                                     <div class="col-md-12 col-xs-12 row_padding">
                                         <p class="input_title_1">PostCode</p>
                                         <p class="input_title_2">
-                                            <input id="ic" name="postcode" class="gui-input" placeholder="PostCode">
+                                            <input id="ic" name="postcode" class="gui-input" value="{{old('post_code')}}" placeholder="PostCode">
+                                            @error('postcode')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
                                         </p>
                                     </div>
                                 </div>

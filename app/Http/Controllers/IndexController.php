@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App;
 use App\Sale;
 
 class IndexController extends Controller
@@ -11,7 +12,6 @@ class IndexController extends Controller
     public function index(Request $request) {
         return view('index');
     }
-
     public function index_zh(Request $request) {
         return view('index_zh');
     }
@@ -25,10 +25,21 @@ class IndexController extends Controller
             'price' => $request->get('price'),
             'quantity' => $request->get('quantity'),
         ]);
-        return view('form', compact('sale'));
+        return redirect(route('form', $sale->id));
     }
 
+    public function form($id) {
+        $sale = Sale::find($id);
+        return view('form', compact('sale'));
+    }
+ 
     public function form_submit(Request $request) {
+        $request->validate([
+            'name_as_ic' => 'required|string|min:6|regex:/^[\pL\s\-]+$/u',
+            'phone_number' => 'numeric|min:10',
+            'address' => 'required|string',
+            'postcode' => 'required|string|max:5',
+        ]);
         $sale = Sale::find($request->get('sale_id'));
         $sale->update([
             'name_as_ic' => $request->get('name_as_ic'),
@@ -49,5 +60,12 @@ class IndexController extends Controller
             'reference_no' => $request->get('reference_no'),
         ]);
         return response()->json('success');
+    }
+
+    public function lang($locale)
+    {
+        App::setLocale($locale);
+        session()->put('locale', $locale);
+        return redirect()->back();
     }
 }

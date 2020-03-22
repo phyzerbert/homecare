@@ -454,11 +454,7 @@
                                 <div class="list-view--item highlight-widget--content">
 
                                     <div class="inner">
-                                        <img sizes="(max-width: 479px) 280vw,
-                        (max-width: 549px) 440vw,
-                        (max-width: 768px) 660vw,
-                        (max-width: 1366px) 1024vw,
-                        1920vw" src="{{asset('pages/who/images/default-source/health-topics/coronavirus/coronavirus-2.jpg')}}" class="background-highlight-image">
+                                        <img src="{{asset('pages/who/images/default-source/health-topics/coronavirus/coronavirus-2.jpg')}}" class="background-highlight-image">
 
                                         <div class="sf_colsIn container">
                                             <div class="content">
@@ -548,8 +544,8 @@
                                         <div>
                                             <iframe width="560" height="267" src="https://www.youtube.com/embed/LPOpdbwiaiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                             <h3><a href="/zh/news-room/q-a-detail/q-a-coronaviruses"></a><a href="/zh/news-room/q-a-detail/q-a-coronaviruses"></a>
-<a href="http://terrance.who.int/mediacentre/videos/coronavirus/WHO-PROD_Coronavirus_QA_14JAN2020_en_st_ch.mp4" data-sf-ec-immutable="">世卫组织Maria Van Kerkhove博士针对冠状病毒的解答 →</a>
-</h3>
+                                            <a href="http://terrance.who.int/mediacentre/videos/coronavirus/WHO-PROD_Coronavirus_QA_14JAN2020_en_st_ch.mp4" data-sf-ec-immutable="">世卫组织Maria Van Kerkhove博士针对冠状病毒的解答 →</a>
+                                            </h3>
                                             <div data-url="">
 
                                             </div>
