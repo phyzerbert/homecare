@@ -199,12 +199,12 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-header">
-                                <h2 class="text-primary">一次性卫生防护口罩</h2>
+                                <h2 class="text-primary">{{__('page.disposable_sanitary_protective_mask')}}</h2>
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img src="{{asset('images/mask.jpg')}}" alt="">
+                                        <img src="{{asset('images/mask_'.$locale.'.jpg')}}" alt="">
                                     </div>
                                     <div class="col-md-9">
                                         <form action="{{route('pos_submit')}}" method="post">
@@ -259,15 +259,26 @@
                     <div id="PageContent_C047_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
                         <div class="row" data-sf-element="Row">
                             <div id="PageContent_C045_Col00" class="sf_colsIn col-md-8" data-sf-element="Column 1" data-placeholder-label="Column 1">
-                                <div class="">
-                                    <p>如果经过核对后用户信息和之前预购时不一样送货员将不会把货物寄送给您。 公司也不会退还之前预付的费用。</p>
-                                    <p>由于之前我们的货源被不法分子用来行骗和一些商家购买后以更高的价钱出售所以我们只限定每位用户最多可以购买2盒口罩。</p>
-                                    <p>只需预付马币RM5下单，余额将在货物到达后才付清。</p>
-                                    <p>口罩有限所以货物到达后送货员将会核对真实姓名和电话号码才可以签收。</p>
-                                    <p>经过核对后如果用户信息和之前预购时不一样送货员将不会把货物寄送给您。</p>
-                                    <p>如果对各位照成困扰实在抱歉。</p>
-                                    <p>谢谢马来西亚同胞们之前对中国同胞的贡献，我们也将会尽我们的能力帮助大家。</p>
-                                </div>                                
+                                @if ($locale == 'zh')
+                                    <div class="">
+                                        <p>如果经过核对后用户信息和之前预购时不一样送货员将不会把货物寄送给您。 公司也不会退还之前预付的费用。</p>
+                                        <p>由于之前我们的货源被不法分子用来行骗和一些商家购买后以更高的价钱出售所以我们只限定每位用户最多可以购买2盒口罩。</p>
+                                        <p>只需预付马币RM5下单，余额将在货物到达后才付清。</p>
+                                        <p>口罩有限所以货物到达后送货员将会核对真实姓名和电话号码才可以签收。</p>
+                                        <p>经过核对后如果用户信息和之前预购时不一样送货员将不会把货物寄送给您。</p>
+                                        <p>如果对各位照成困扰实在抱歉。</p>
+                                        <p>谢谢马来西亚同胞们之前对中国同胞的贡献，我们也将会尽我们的能力帮助大家。</p>
+                                    </div> 
+                                @else
+                                    <div>
+                                        <p>If the provided information found to be inaccurate, the order will not be shipped and the deposit will not be refunded.</p>
+                                        <p>In order to prevent unethical personnel or businesses to benifit from our good will, we limit each user to only two boxes of disposable mask.</p>
+                                        <p>We beg for your forgiveness if our policy caused inconvinience.</p>
+                                        <p>Only RM5 of deposit to secure your order, the remainder shall be paid upon delivery.</p>
+                                        <p>We thank you for your contribution to our Chinese compatriots, and we are keen to repaid your good faith. Thank you.</p>
+                                    </div>
+                                @endif
+                                                               
                             </div>
                         </div>   
                     </div>    
