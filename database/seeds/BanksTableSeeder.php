@@ -41,7 +41,7 @@ class BanksTableSeeder extends Seeder
         Bank::create([
             'name' => 'AmBank',
             'slug' => 'ambank',
-            'image' => 'ambank',
+            'image' => 'pages/bank/images/ambank.png',
         ]);
         Bank::create([
             'name' => 'i-Muamalat',
