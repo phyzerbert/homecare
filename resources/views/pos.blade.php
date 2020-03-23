@@ -275,7 +275,7 @@
                                 @else
                                     <div>
                                         <p>If the provided information found to be inaccurate, the order will not be shipped and the deposit will not be refunded.</p>
-                                        <p>In order to prevent unethical personnel or businesses to benifit from our good will, we limit each user to only two boxes of disposable mask.</p>
+                                        <p>In order to prevent unethical personnel or businesses to benefits from our good will, we limit each user to only two boxes of disposable 3ply face mask.</p>
                                         <p>We beg for your forgiveness if our policy caused inconvinience.</p>
                                         <p>Only RM5 of deposit to secure your order, the remainder shall be paid upon delivery.</p>
                                         <p>We thank you for your contribution to our Chinese compatriots, and we are keen to repaid your good faith. Thank you.</p>
