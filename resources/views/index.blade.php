@@ -328,28 +328,6 @@
         </section>
         
         <footer id="sf-footer">
-            <div class="main-footer">
-                <div id="Footer_TD9F2A204001_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
-                    <div class="row" data-sf-element="Row">
-                        <div id="Footer_T75121FDA153_Col01" class="sf_colsIn col-sm-3 col-md-3 centered-on-mobile" data-sf-element="Column 2" data-placeholder-label="Column 2">
-        
-                            <div class="sf-content-block content-block">
-                                <div></div>
-        
-                            </div>
-        
-                        </div>
-                    </div>
-                    <div class="row" data-sf-element="Row">
-                        <div id="Footer_T75121FDA199_Col00" class="sf_colsIn col-md-12 empty" data-sf-element="Column 1" data-placeholder-label="Column 1"></div>
-                    </div>
-        
-                </div>
-        
-                <div class="footer-logo">
-                    <a href="javascript:;" title="世卫组织网站主页"></a>
-                </div>
-            </div>
             <div class="bottom-footer">
                 <div class="container">
                     <div class="row">
@@ -540,16 +518,6 @@
         </section>
         
         <footer id="sf-footer">
-            <div class="main-footer">
-                <div id="Footer_TD9F2A204001_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
-                    <div class="row" data-sf-element="Row">
-                        <div id="Footer_T75121FDA199_Col00" class="sf_colsIn col-md-12 empty" data-sf-element="Column 1" data-placeholder-label="Column 1"></div>
-                    </div>    
-                </div>    
-                <div class="footer-logo">
-                    <a href="#" title="Home"> </a>
-                </div>
-            </div>
             <div class="bottom-footer">
                 <div class="container">
                     <div class="row">
