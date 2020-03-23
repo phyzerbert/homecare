@@ -4,6 +4,9 @@
     <style>
         .btn_pos {
             background-image: url("{{asset('images/btn_pos.png')}}");
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
             width: 175px;
             height: 46px;
             border-radius: 5px;
@@ -125,7 +128,7 @@
                     <div class="sf_colsIn col-md-4" data-sf-element="Geo Navigation" data-placeholder-label="Geo Navigation"></div>
                     <div class="sf_colsIn col-md-8" data-sf-element="Language Selector &amp; Search" data-placeholder-label="Language Selector &amp; Search">
                         
-                        @php $locale = session()->get('locale'); @endphp
+                        @php $locale = 'en'; $locale = session()->get('locale'); @endphp
                         <div class="language-selector language-selector-header">
                             <ul class="sf-lang-selector list-inline">
                                 <li>
@@ -211,7 +214,7 @@
                                             @csrf
                                             <div class="form-group row">
                                                 <div class="col-md-2">
-                                                    <label for="">商品价值:</label>
+                                                    <label for="">{{__('page.price')}}:</label>
                                                 </div>
                                                 <div class="col-md-10">
                                                     <label for="price_50"  class="radbox">
@@ -222,12 +225,12 @@
                                             </div>
                                             <div class="form-group row" style="margin-top: 15px;">
                                                 <div class="col-md-2">
-                                                    <label for="">商品数量:</label>
+                                                    <label for="">{{__('page.quantity')}}:</label>
                                                 </div>
                                                 <div class="col-md-10">
                                                     <div class="number-spinner">
                                                         <span class="ns-btn">
-                                                                <a data-dir="dwn"><span class="icon-minus"></span></a>
+                                                            <a data-dir="dwn"><span class="icon-minus"></span></a>
                                                         </span>
                                                         <input type="text" class="pl-ns-value" value="1" name="quantity" max="2" />
                                                         <span class="ns-btn">
@@ -239,7 +242,7 @@
                                             <div class="form-group row" style="margin-top: 30px;">
                                                 <div class="col-md-2"></div>
                                                 <div class="col-md-10">
-                                                    <button type="submit" class="btn btn-danger btn-lg btn_pos"></button>
+                                                    <button type="submit" class="btn btn-danger btn-lg btn_pos">{{__('page.buy_now')}}</button>
                                                 </div>
                                             </div>
                                         </form>

@@ -9,6 +9,10 @@ use App\Sale;
 
 class IndexController extends Controller
 {
+    public function __construct(){
+        
+    }
+    
     public function index(Request $request) {
         return view('index');
     }
