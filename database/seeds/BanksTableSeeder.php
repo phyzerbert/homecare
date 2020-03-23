@@ -16,87 +16,72 @@ class BanksTableSeeder extends Seeder
         Bank::create([
             'name' => 'Maybank2u',
             'slug' => 'maybank2u',
-            'image' => 'pages/bank/images/maybank.png',
+            'image' => 'pages/bank/images/maybank.jpg',
         ]);
         Bank::create([
             'name' => 'CIMB Clicks',
             'slug' => 'cimb_clicks',
-            'image' => 'pages/bank/images/cimb.png',
+            'image' => 'pages/bank/images/cimb.jpg',
         ]);
         Bank::create([
             'name' => 'RHB Now',
             'slug' => 'rhb_now',
-            'image' => 'pages/bank/images/rhb.png',
+            'image' => 'pages/bank/images/rhb.jpg',
         ]);
         Bank::create([
             'name' => 'PBe',
             'slug' => 'pbe',
-            'image' => 'pages/bank/images/pbe.png',
+            'image' => 'pages/bank/images/public.jpg',
         ]);
         Bank::create([
             'name' => 'Hong Leong Connect',
             'slug' => 'hong_leong_connect',
-            'image' => 'pages/bank/images/hl.png',
+            'image' => 'pages/bank/images/hong_leong.jpg',
         ]);
         Bank::create([
             'name' => 'AmBank',
             'slug' => 'ambank',
-            'image' => 'pages/bank/images/ambank.png',
-        ]);
-        Bank::create([
-            'name' => 'i-Muamalat',
-            'slug' => 'muamalat',
-            'image' => 'pages/bank/images/muamalat.png',
-        ]);
-        Bank::create([
-            'name' => 'i-Rakyat',
-            'slug' => 'rakyat',
-            'image' => 'pages/bank/images/rakyat.png',
+            'image' => 'pages/bank/images/ambank.jpg',
         ]);
         Bank::create([
             'name' => 'BSN',
             'slug' => 'bsn',
-            'image' => 'pages/bank/images/bsn.png',
+            'image' => 'pages/bank/images/bsn.jpg',
         ]);
         Bank::create([
             'name' => 'HSBC',
             'slug' => 'hsbc',
-            'image' => 'pages/bank/images/hsbc.png',
+            'image' => 'pages/bank/images/hsbc.jpg',
         ]);
         Bank::create([
             'name' => 'OCBC',
             'slug' => 'ocbc',
-            'image' => 'pages/bank/images/ocbc.png',
+            'image' => 'pages/bank/images/ocbc.jpg',
         ]);
         Bank::create([
             'name' => 'UOB',
             'slug' => 'uob',
-            'image' => 'pages/bank/images/uob.png',
+            'image' => 'pages/bank/images/uob.jpg',
         ]);
         Bank::create([
             'name' => 'Standard Chartered',
             'slug' => 'standard_chartered',
-            'image' => 'pages/bank/images/scb.png',
+            'image' => 'pages/bank/images/standard.jpg',
         ]);
         Bank::create([
             'name' => 'Bank Islam',
             'slug' => 'bank_islam',
-            'image' => 'pages/bank/images/bankislam.png',
+            'image' => 'pages/bank/images/bank_islam.jpg',
         ]);
         Bank::create([
             'name' => 'Alliance Bank',
             'slug' => 'alliance_bank',
-            'image' => 'pages/bank/images/alliance1.jpg',
+            'image' => 'pages/bank/images/alliance.jpg',
         ]);
         Bank::create([
             'name' => 'Affin Bank',
             'slug' => 'affin_bank',
-            'image' => 'pages/bank/images/affin.png',
-        ]);
-        Bank::create([
-            'name' => 'KFH',
-            'slug' => 'kfh',
-            'image' => 'pages/bank/images/kfh.png',
+            'image' => 'pages/bank/images/affin.jpg',
         ]);
     }
 }

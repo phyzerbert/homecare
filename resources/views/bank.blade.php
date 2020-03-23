@@ -58,7 +58,7 @@
                     <div class="row" id="form-section">
                         <div class="col-12">
                             <h5 id="desktop-note">Note:<br>
-                                Select your bank to make payment. Please do not click on browser's back button, refresh or close this page. Please enter your AirAsia BIG Loyalty registered email address to earn BIG Points for your purchase. By providing this email address, you confirm, agree and consent for AirAsia BIG to pass your email address to revPAY which may be used by revPAY to contact you in the future for any matters related to the issuance of BIG Points or purchase of your product.
+                                Select your bank to make payment. Please do not click on browser's back button, refresh or close this page.
                             </h5>
                         </div>
                     </div>
