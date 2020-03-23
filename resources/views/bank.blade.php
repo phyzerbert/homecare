@@ -155,7 +155,7 @@
                                     </div>                                    
                                 </div>
                                 <div class="form-group mt-3">
-                                    <input type="text" class="form-control" name="amount" value="RM 5" placeholder="Amount" />
+                                    <input type="text" class="form-control" name="amount" value="RM 5" readonly placeholder="Amount" />
                                 </div>
                                 <div class="form-group mt-3">
                                     <button type="submit" class="btn btn-primary btn-block mt-2" id="btn_submit">Submit</button>
