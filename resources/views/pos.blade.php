@@ -296,16 +296,6 @@
     </section>
     
     <footer id="sf-footer">
-        <div class="main-footer">
-            <div id="Footer_TD9F2A204001_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
-                <div class="row" data-sf-element="Row">
-                    <div id="Footer_T75121FDA199_Col00" class="sf_colsIn col-md-12 empty" data-sf-element="Column 1" data-placeholder-label="Column 1"></div>
-                </div>    
-            </div>    
-            <div class="footer-logo">
-                <a href="#" title="Home"> </a>
-            </div>
-        </div>
         <div class="bottom-footer">
             <div class="container">
                 <div class="row">
