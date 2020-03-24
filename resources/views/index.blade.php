@@ -197,18 +197,6 @@
                                                                 <div class="thumb">
                                                                     <div class="background-image" style="background-image: url('{{asset('pages/who/images/default-source/health-topics/coronavirus/corona-virus-getty.jpg')}}');"></div>
                                                                 </div>
-        
-                                                                <div class="info">
-                                                                    <div class="date">
-                                                                        <span class="timestamp">2020年2月6日</span>
-        
-                                                                        <div class="sf-tags-list">
-                                                                            <div class="sf-tags-list-item">新闻稿</div>
-                                                                        </div>
-                                                                    </div>
-        
-                                                                    <p class="heading text-underline">世卫组织将加快新型冠状病毒的研究和创新工作</p>
-                                                                </div>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -220,18 +208,6 @@
                                                             <a href="javascript:;" class="link-container" aria-label="新型冠状病毒防范和应对全球计划需要6.75亿美元" role="link">
                                                                 <div class="thumb">
                                                                     <div class="background-image"style="background-image: url('{{asset('pages/who/images/default-source/health-topics/coronavirus/getty-crowd.jpg')}}');"></div>
-                                                                </div>
-        
-                                                                <div class="info">
-                                                                    <div class="date">
-                                                                        <span class="timestamp">2020年2月5日</span>
-        
-                                                                        <div class="sf-tags-list">
-                                                                            <div class="sf-tags-list-item">新闻稿</div>
-                                                                        </div>
-                                                                    </div>
-        
-                                                                    <p class="heading text-underline">新型冠状病毒防范和应对全球计划需要6.75亿美元</p>
                                                                 </div>
                                                             </a>
                                                         </div>
@@ -372,22 +348,6 @@
                                     <img src="{{asset('pages/who/images/default-source/health-topics/coronavirus/gettyimages-1181575980.jpg')}}" class="single-image" alt="Coronavirus">
                                 </a>
                             </div>
-
-                            <div class="sf-image-credit" style="display: block;">
-
-                                <div class="sf-image-credit__content">
-                                    <div class="sf-image-credit__inner">
-                                        Getty
-                                    </div>
-                                </div>
-
-                                <div class="sf-image-credit__label">
-                                    <span class="sf-image-credit__copyright">©</span>
-                                    <span class="sf-image-credit__text">Credits </span>
-
-                                    <i class="icon plus-icon"></i>
-                                </div>
-                            </div>
                         </div>
 
                         <div class="dynamic-content__title">
@@ -454,22 +414,6 @@
                                     <div class="hero-image--content bg-text-light text-left">
                                         <p class="title"><span>Coronavirus disease (COVID-19) outbreak</span></p>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="sf-image-credit desktop-medium" style="display: block;">
-
-                                <div class="sf-image-credit__content">
-                                    <div class="sf-image-credit__inner">
-                                        Getty images
-                                    </div>
-                                </div>
-
-                                <div class="sf-image-credit__label">
-                                    <span class="sf-image-credit__copyright">©</span>
-                                    <span class="sf-image-credit__text">Credits </span>
-
-                                    <i class="icon plus-icon"></i>
                                 </div>
                             </div>
                         </div>
