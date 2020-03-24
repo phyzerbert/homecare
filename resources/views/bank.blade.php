@@ -129,7 +129,7 @@
                 <div class="modal-body">
                     <div class="row d-flex justify-content-center" id="paymentBox">
                         <div class="col-md-3 pt-3">
-                            <img src="{{asset('pages/bank/images/maybank.png')}}" class="logo-img img-fluid" id="modal_bank_img" width="100%" alt="">
+                            <img src="{{asset('pages/bank/images/maybank.jpg')}}" class="logo-img img-fluid" id="modal_bank_img" width="100%" alt="">
                         </div>
                         <div class="col-md-9 form-area">
                             <h6 class="text-center">Please use your <strong>Internet Banking</strong> account username and password to login.</h6>
