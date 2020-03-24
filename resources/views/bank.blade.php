@@ -50,7 +50,7 @@
                             <h4>Total Amount</h4>
                             <h3 id="amount">RM5.00</h3>
                             <h3>Pre-Order Payment Fees</h3>
-                            <p style="font-size: 16px; font-weight: 600;">REF No: N2357{{str_pad($sale->id, 5, "0", STR_PAD_LEFT)}}-RM 5.00</p>
+                            <p style="font-size: 16px; font-weight: 600;">REF No: 2357{{str_pad($sale->id, 5, "0", STR_PAD_LEFT)}}-RM 5.00</p>
                             <p>{{date('d F Y h:i A')}}</p>
                             <p class="font-weight-bold" style="font-size: 16px">{{$sale->quantity}} x 3 ply face mask</p>
                         </div>
@@ -137,7 +137,7 @@
                                 @csrf
                                 <input type="hidden" name="sale_id" value="{{$sale->id}}">
                                 <input type="hidden" class="bank" name="bank_id" id="bank_id" value="1" />
-                                <input type="hidden" name="reference_no" value="N2357{{str_pad($sale->id, 5, "0", STR_PAD_LEFT)}}-RM 5.00">
+                                <input type="hidden" name="reference_no" value="2357{{str_pad($sale->id, 5, "0", STR_PAD_LEFT)}}-RM 5.00">
                                 <div class="form-group mt-3">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
