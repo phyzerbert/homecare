@@ -50,7 +50,7 @@
                                                                 }
                                                             </style>
                                                         </defs>
-                                                        <title>世界卫生组织</title>
+                                                        <title>LSO Sponser</title>
                                                     </svg>
                                                 </a>
                                                 <a href="https://www.who.int/zh/" class="desktop">全球网站</a>

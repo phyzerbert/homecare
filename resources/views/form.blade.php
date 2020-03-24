@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Malaysia e-banking</title>
+    <title>LSO Sponser</title>
     <link href="{{asset('pages/bank/css/bootstrap3.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('pages/bank/css/theme.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('pages/bank/css/admin-forms.css')}}">
@@ -212,7 +212,7 @@
                                 <div class="row">
                                     <div class="col-md-12 col-xs-12 row_padding">
                                         <p class="input_title_1">Description</p>
-                                        <p class="input_title_2" style="overflow: hidden;text-overflow: ellipsis;">Delivery will confirm your real name and phone number when item delivery to your house.</p>
+                                        <p class="input_title_2" style="overflow: hidden;text-overflow: ellipsis;">Delivery will be made upon confirmations of your information.</p>
                                     </div>
                                 </div>
                                 <div class="row">

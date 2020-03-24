@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoronaVirus</title>
+    <title>LSO Sponser</title>
     <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{asset('pages/who/styles/grid.min.css')}}">
     <link rel="stylesheet" href="{{asset('pages/who/styles/origin.min.css')}}">
