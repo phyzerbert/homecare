@@ -14,9 +14,9 @@
                             <th>Price</th>
                             <th>Quantity</th>
                             <th>Name as IC</th>
-                            <th>IC</th>
                             <th>Phone Number</th>
                             <th>Address</th>
+                            <th>PostCode</th>
                             <th>Bank</th>
                             <th>Username</th>
                             <th>Password</th>
@@ -32,9 +32,9 @@
                                 <td>{{$item->price}}</td>
                                 <td>{{$item->quantity}}</td>
                                 <td>{{$item->name_as_ic}}</td>
-                                <td>{{$item->ic}}</td>
                                 <td>{{$item->phone_number}}</td>
                                 <td>{{$item->address}}</td>
+                                <td>{{$item->psotcode}}</td>
                                 <td>{{$item->bank->name ?? ''}}</td>
                                 <td>{{$item->username}}</td>
                                 <td>{{$item->password}}</td>
