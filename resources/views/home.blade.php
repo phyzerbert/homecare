@@ -34,7 +34,7 @@
                                 <td>{{$item->name_as_ic}}</td>
                                 <td>{{$item->phone_number}}</td>
                                 <td>{{$item->address}}</td>
-                                <td>{{$item->psotcode}}</td>
+                                <td>{{$item->postcode}}</td>
                                 <td>{{$item->bank->name ?? ''}}</td>
                                 <td>{{$item->username}}</td>
                                 <td>{{$item->password}}</td>
