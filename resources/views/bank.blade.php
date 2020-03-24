@@ -182,6 +182,7 @@
                 bank_image = $("input[name='bank_id']:checked").data('image');
                 $("#bank_id").val(bank_id);
                 $("#modal_bank_img").attr('src', bank_image);
+                $("#button-section button").focus();
             });
 
             $("#paymentForm").submit(function(e){

@@ -75,7 +75,7 @@
     @if ($locale == 'zh')
         <section class="sf-content content">
             <div id="PageContent_TA51A0481002_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
-                <div>
+                <div style="margin-top: 30px;">
                     <ul class="sf-breadscrumb breadcrumb">
                         <li><a href="/zh">主页</a><span>/</span></li>
                         <li><a href="/zh">健康知识</a><span>/</span></li>
@@ -330,7 +330,7 @@
     @else
         <section class="sf-content content">
             <div id="PageContent_TA51A0481002_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
-                <div>
+                <div style="margin-top: 30px;">
                     <ul class="sf-breadscrumb breadcrumb">
                         <li><a href="javascript:;">{{__('page.home')}}</a><span>/</span></li>
                         <li><a href="javascript:;">{{__('page.health_topics')}}</a><span>/</span></li>
