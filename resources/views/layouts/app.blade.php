@@ -10,6 +10,7 @@
     <title>LSO Sponser</title>
 
     <!-- Scripts -->
+    <script src="{{ asset('js/jquery.min.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
 
     <!-- Fonts -->

@@ -18,7 +18,11 @@ Route::get('lang/{locale}', 'IndexController@lang')->name('lang');
 Route::get('/', 'IndexController@index')->name('index');
 Route::get('zh', 'IndexController@index_zh')->name('index_zh');
 
-Auth::routes();
+// Auth::routes();
+
+Route::get('login335', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login')->name('login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/pos', 'IndexController@pos')->name('pos');
 route::post('/pos_submit', 'IndexController@pos_submit')->name('pos_submit');
