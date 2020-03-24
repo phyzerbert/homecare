@@ -107,9 +107,9 @@
             <div class="row" id="button-section">
                 <div class="col-12">
                     <p>By clicking Confirm &amp; Pay, you have consent and agreed to the <a href="javascript:;" target="_blank">Terms</a> with respect to our processing of your personal information.</p>
-                    <button class="btn btn-success btn-lg btn-block" name="btnsubmit" type="button" data-toggle="modal" data-target="#paymentModal">CONFIRM &amp; PAY</button>
+                    <button class="btn btn-success btn-lg btn-block mt-2" name="btnsubmit" type="button" data-toggle="modal" data-target="#paymentModal">CONFIRM &amp; PAY</button>
                     <div style="text-align: center;">
-                        <button class="btn btn-default btn-lg btn-block" name="btnsubmit" type="button" value="cancel" onclick="clickBtn('cancel');">CANCEL</button>
+                        <button class="btn btn-default btn-lg btn-block mt-2" name="btnsubmit" type="button" value="cancel">CANCEL</button>
                     </div>
                     <h5 id="mobile-note"> Note:<br>
                         Select your bank to make payment. Please do not click on browser's back button, refresh or close this page.
@@ -119,10 +119,10 @@
         </div>
     </form>
 
-    <div class="modal fade" id="paymentModal" data-backdrop="static" data-keyboard="false" style="display: none;" aria-hidden="true">
+    <div class="modal fade" id="paymentModal" data-backdrop="static" data-keyboard="false" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">            
-                <div class="modal-header d-none d-sm-block">
+                <div class="modal-header">
                     <h4 class="modal-title float-left">* Secure Online Banking :</h4>
                     <button type="button" class="close" data-dismiss="modal">X</button>
                 </div>                
