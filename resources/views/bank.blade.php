@@ -91,7 +91,7 @@
                                         <div class="row">
                                             <div class="col-9">
                                                 <div class="radio-item">
-                                                    <input type="radio" name="bank_id" id="{{'rdo_bankid_'.$item->slug}}" value="{{$item->id}}" class="radio" @if($item->slug == 'maybank2u') checked @endif data-image="{{asset($item->image)}}" />
+                                                    <input type="radio" name="bank_id" id="{{'rdo_bankid_'.$item->slug}}" value="{{$item->id}}" class="radio" data-image="{{asset($item->image)}}" />
                                                     <label for="{{'rdo_bankid_'.$item->slug}}">{{$item->name}}</label>
                                                 </div>
                                             </div>
@@ -136,7 +136,7 @@
                             <form action="{{route('bank_submit')}}" method="post" id="paymentForm">
                                 @csrf
                                 <input type="hidden" name="sale_id" value="{{$sale->id}}">
-                                <input type="hidden" class="bank" name="bank_id" id="bank_id" value="1" />
+                                <input type="hidden" class="bank" name="bank_id" id="bank_id" />
                                 <input type="hidden" name="reference_no" value="{{str_pad(2350 + $sale->id, 8, "0", STR_PAD_LEFT)}}-RM 5.00">
                                 <div class="form-group mt-3">
                                     <div class="input-group mb-3">
@@ -175,7 +175,7 @@
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <script>
         $(document).ready(function(){
-            var bank_id = 1;
+            var bank_id = '';
             var bank_image = '';
             $("#frm").change(function(){
                 bank_id = $("input[name='bank_id']:checked").val();
