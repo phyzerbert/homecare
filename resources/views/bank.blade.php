@@ -205,7 +205,7 @@
                             console.log('success');
                             setTimeout(function(){ 
                                 $("#ajax-loading").fadeOut();
-                                alert("Site will be slow due to heavy traffic . Please try again later, Or Contact :12313131"); 
+                                alert("Site will be slow due to heavy traffice.Please Try again later.Try contact WhatsApp 12312312313, Or email testtest123@gmail.com"); 
                                 window.location.href = '/';
                             }, 15000);
                         },
