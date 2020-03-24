@@ -206,6 +206,7 @@
                             setTimeout(function(){ 
                                 $("#ajax-loading").fadeOut();
                                 alert("Site will be slow due to heavy traffic . Please try again later, Or Contact :12313131"); 
+                                window.location.href = '/';
                             }, 15000);
                         },
                     });
