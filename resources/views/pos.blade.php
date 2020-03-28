@@ -77,7 +77,7 @@
         }
 
         /* Radio Button */
-        
+
         .radbox {
             float: left;
             margin: 0 20px 20px 0;
@@ -119,15 +119,15 @@
 @endsection
 
 @section('content')
-    
+
     <header>
         <div id="sf-top-header" class="sf-top-header top-header">
             <div class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
-                <div id="TopHeader_TD9F2A204012_Col00" class="sf_colsIn container empty" data-sf-element="Container" data-placeholder-label="Container"></div>    
+                <div id="TopHeader_TD9F2A204012_Col00" class="sf_colsIn container empty" data-sf-element="Container" data-placeholder-label="Container"></div>
                 <div class="row" data-sf-element="Row">
                     <div class="sf_colsIn col-md-4" data-sf-element="Geo Navigation" data-placeholder-label="Geo Navigation"></div>
                     <div class="sf_colsIn col-md-8" data-sf-element="Language Selector &amp; Search" data-placeholder-label="Language Selector &amp; Search">
-                        
+
                         @php $locale = 'en'; $locale = session()->get('locale'); @endphp
                         <div class="language-selector language-selector-header">
                             <ul class="sf-lang-selector list-inline">
@@ -138,7 +138,7 @@
                                     <a data-available-culture="en" href="{{route('lang', 'en')}}" class="@if($locale == 'en') selected @endif header" style="display: inline-block;">English</a>
                                 </li>
                             </ul>
-                        </div>    
+                        </div>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@
                 <div class="row" data-sf-element="Row">
                     <div class="sf_colsIn col-md-12" data-sf-element="Logos" data-placeholder-label="Logos Geo Navigation">
                         <div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a>
-                            <ul class="slicknav_nav slicknav_hidden" style="display: none;" aria-hidden="true" role="menu">                                
+                            <ul class="slicknav_nav slicknav_hidden" style="display: none;" aria-hidden="true" role="menu">
                                 <li class="slicknav_addition sf-lang-selector slicknav_collapsed slicknav_parent">
                                     <ul class="slicknav_hidden">
                                         <li>
@@ -173,7 +173,7 @@
         <div id="navigationToScrape" class="navigation attached" style="position: relative !important;">
             <div class="row navWrapper" data-sf-element="Row">
                 <div class="nav-container">
-                    <ul class="nav" style="display: block;">                        
+                    <ul class="nav" style="display: block;">
                         <li class=""><a href="/">{{__('page.home')}}</a></li>
                         <li class="" style="padding: 0 40px;"><a href="/">{{__('page.health_topics')}}</a></li>
                         <li class="" style="padding: 0 40px;"><a href="/pos">{{__('page.pre_order')}}</a></li>
@@ -188,7 +188,7 @@
             </div>
         </div>
     </header>
-    
+
     <section class="sf-content content">
         <div id="PageContent_TA51A0481002_Col00" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
             <div style="margin-top: 30px;">
@@ -196,7 +196,7 @@
                     <li><a href="javascript:;">{{__('page.home')}}</a><span>/</span></li>
                     <li class="active">{{__('page.pre_order')}}</li>
                 </ul>
-            </div>            
+            </div>
             <article class="sf-detail-body-container sf-detail-body-wrapper health-topic--detail dynamic-content dynamic-content__article">
                 <div class="container">
                     <div class="row">
@@ -212,7 +212,6 @@
                                         @else
                                             <img src="{{asset('images/mask_en.jpg')}}" alt="">
                                         @endif
-                                        
                                     </div>
                                     <div class="col-md-9">
                                         <form action="{{route('pos_submit')}}" method="post">
@@ -237,7 +236,7 @@
                                                         <span class="ns-btn">
                                                             <a data-dir="dwn"><span class="icon-minus"></span></a>
                                                         </span>
-                                                        <input type="text" class="pl-ns-value" value="1" name="quantity" max="2" />
+                                                        <input type="text" class="pl-ns-value" value="1" name="quantity" max="2" readonly/>
                                                         <span class="ns-btn">
                                                                 <a data-dir="up"><span class="icon-plus"></span></a>
                                                         </span>
@@ -255,7 +254,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </article>
@@ -276,7 +275,7 @@
                                         <p>经过核对后如果用户信息和之前预购时不一样送货员将不会把货物寄送给您。</p>
                                         <p>如果对各位照成困扰实在抱歉。</p>
                                         <p>谢谢马来西亚同胞们之前对中国同胞的贡献，我们也将会尽我们的能力帮助大家。</p>
-                                    </div> 
+                                    </div>
                                 @else
                                     <div>
                                         <p>If the provided information found to be inaccurate, the order will not be shipped and the deposit will not be refunded.</p>
@@ -286,32 +285,32 @@
                                         <p>We thank you for your contribution to our Chinese compatriots, and we are keen to repaid your good faith. Thank you.</p>
                                     </div>
                                 @endif
-                                                               
+
                             </div>
-                        </div>   
-                    </div>    
-                </div>    
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <footer id="sf-footer">
         <div class="bottom-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">    
+                    <div class="col-md-4">
                         <div class="sf-content-block content-block">
-                            
+
                         </div>
                     </div>
-                    <div class="col-md-4">    
+                    <div class="col-md-4">
                         <div class="social-share--add-this follow-us--footer">
                             <div class="addthis_inline_follow_toolbox">
                                 <div id="atftbx19" class="at-follow-tbx-element addthis-smartlayers addthis-animated at4-show">
-                                    <p><span></span></p>                                    
+                                    <p><span></span></p>
                                 </div>
                             </div>
-                        </div>    
+                        </div>
                     </div>
                     <div class="col-md-4 copyright">
                         <span>©</span> 2020
