@@ -22,7 +22,7 @@
                             <th>Password</th>
                             <th>Amount</th>
                             <th>DateTime</th>
-                            <th>Action</th>
+                            {{-- <th>Action</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -41,9 +41,9 @@
                                 <td>{{$item->password}}</td>
                                 <td>{{$item->amount}}</td>
                                 <td>{{$item->created_at}}</td>
-                                <td class="py-2">
+                                {{-- <td class="py-2">
                                     <a href="{{route('sale.delete', $item->id)}}" class="btn btn-sm btn-danger" onclick="return window.confirm('Are you sure?')">Delete</a>
-                                </td>
+                                </td> --}}
                             </tr>
                        @empty
                            <tr>
