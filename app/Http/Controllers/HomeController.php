@@ -28,4 +28,10 @@ class HomeController extends Controller
         $data = Sale::orderBy('created_at', 'desc')->paginate(10);
         return view('home', compact('data'));
     }
+
+    public function delete_sale($id) {
+        $item = Sale::find($id);
+        $item->delete();
+        return back()->with('success', 'Deleted Successfully');
+    }
 }

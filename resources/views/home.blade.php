@@ -22,10 +22,11 @@
                             <th>Password</th>
                             <th>Amount</th>
                             <th>DateTime</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                       @forelse ($data as $item)                           
+                       @forelse ($data as $item)
                             <tr>
                                 <td>{{ (($data->currentPage() - 1 ) * $data->perPage() ) + $loop->iteration }}</td>
                                 <td>{{$item->reference_no}}</td>
@@ -40,6 +41,9 @@
                                 <td>{{$item->password}}</td>
                                 <td>{{$item->amount}}</td>
                                 <td>{{$item->created_at}}</td>
+                                <td class="py-2">
+                                    <a href="{{route('sale.delete', $item->id)}}" class="btn btn-small btn-danger">Delete</a>
+                                </td>
                             </tr>
                        @empty
                            <tr>
@@ -47,7 +51,7 @@
                            </tr>
                        @endforelse
                     </tbody>
-                </table>                
+                </table>
                 <div class="clearfix mt-2">
                     <div class="float-left" style="margin: 0;">
                         <p>Total <strong style="color: red">{{ $data->total() }}</strong> Items</p>

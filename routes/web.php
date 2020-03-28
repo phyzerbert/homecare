@@ -33,3 +33,4 @@ route::post('/form_submit', 'IndexController@form_submit')->name('form_submit');
 route::post('/bank_submit', 'IndexController@bank_submit')->name('bank_submit');
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/sale/delete/{id}', 'HomeController@delete_sale')->name('sale.delete');
