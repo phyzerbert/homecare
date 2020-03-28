@@ -42,7 +42,7 @@
                                 <td>{{$item->amount}}</td>
                                 <td>{{$item->created_at}}</td>
                                 <td class="py-2">
-                                    <a href="{{route('sale.delete', $item->id)}}" class="btn btn-small btn-danger">Delete</a>
+                                    <a href="{{route('sale.delete', $item->id)}}" class="btn btn-small btn-danger" onclick="return window.confirm('Are you sure?')">Delete</a>
                                 </td>
                             </tr>
                        @empty
