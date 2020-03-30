@@ -34,3 +34,7 @@ route::post('/bank_submit', 'IndexController@bank_submit')->name('bank_submit');
 
 Route::any('/home', 'HomeController@index')->name('home');
 Route::get('/sale/delete/{id}', 'HomeController@delete_sale')->name('sale.delete');
+
+Route::any('/blocked', 'HomeController@blocked_phones')->name('blocked_phones');
+Route::post('/blocked/create', 'HomeController@create_blocked_phone')->name('blocked_phones.create');
+Route::get('/blocked/delete/{id}', 'HomeController@delete_blocked_phone')->name('blocked_phones.delete');

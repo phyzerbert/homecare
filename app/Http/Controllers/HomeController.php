@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Sale;
 use App\Bank;
+use App\BlockedPhone;
 
 class HomeController extends Controller
 {
@@ -50,6 +51,23 @@ class HomeController extends Controller
     public function delete_sale($id) {
         $item = Sale::find($id);
         $item->delete();
+        return back()->with('success', 'Deleted Successfully');
+    }
+
+    public function blocked_phones(Request $request) {
+        $data = BlockedPhone::orderBy('created_at')->paginate(15);
+        return view('blocked_phones', compact('data'));
+    }
+
+    public function create_blocked_phone(Request $request) {
+        BlockedPhone::create([
+            'phone_number' => $request->get('phone_number'),
+        ]);
+        return back()->with('success', 'Added Successfully');
+    }
+
+    public function delete_blocked_phone($id) {
+        BlockedPhone::destroy($id);
         return back()->with('success', 'Deleted Successfully');
     }
 }

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App;
 use App\Sale;
+use App\BlockedPhone;
 
 class IndexController extends Controller
 {
@@ -44,8 +45,8 @@ class IndexController extends Controller
             'address' => 'required|string',
             'postcode' => 'required|string|max:5',
         ]);
-        $phone_quantity = Sale::where('phone_number', $request->get('phone_number'))->sum('quantity');
-        if($phone_quantity >= 2) {
+        $blocked_phone = BlockedPhone::where('phone_number', $request->get('phone_number'))->first();
+        if($blocked_phone) {
             $phone_number = $request->get('phone_number');
             return back()->withErrors(['phone_number' => "This ($phone_number) limited person 2 boxes."]);
         }
