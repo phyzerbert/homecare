@@ -17,44 +17,44 @@
             font-weight: 400;
             src: url(/static/font/OpenSans.woff) format('woff');
         }
-        
+
         @font-face {
             font-family: 'OpenSansSemibold';
             font-style: normal;
             font-weight: 600;
             src: url(/static/font/OpenSans-Semibold.woff) format('woff');
         }
-        
+
         @font-face {
             font-family: 'OpenSansBold';
             font-style: normal;
             font-weight: 700;
             src: url(/static/font/OpenSans-Bold.woff) format('woff');
         }
-        
+
         @font-face {
             font-family: 'OpenSansLightWebfont';
             font-style: normal;
             font-weight: 700;
             src: url(/static/font/OpenSans-Light-webfont.woff) format('woff');
         }
-        
+
         body {
             font-family: 'Open Sans', sans-serif;
             -webkit-font-smoothing: antialiased !important;
         }
-        
+
         .panel_margin_top {
             margin-top: 30px;
         }
-        
+
         @media (min-width: 992px) {
             #content_main {
                 width: 360px!important;
                 margin: auto;
             }
         }
-        
+
         @media (max-width: 780px) {
             .container-fluid {
                 margin-right: auto;
@@ -66,39 +66,39 @@
                 margin-top: 0px;
             }
         }
-        
+
         .container-fluid .row {
             margin: 0px!important;
         }
-        
+
         .container-fluid .panel-body {
             padding: 0px;
             margin: 0px;
             padding-bottom: 30px;
         }
-        
+
         .pay_logo {
             text-align: center;
             padding-top: 30px;
         }
         /*.pay_logo img{border: 1px solid #e7e7e7;}*/
-        
+
         .title {
             padding-top: 10px;
             padding-bottom: 20px;
             border-bottom: 1px solid #e7e7e7;
         }
-        
+
         .title .col-md-12 {
             text-align: center;
             font-size: 14px;
             color: #666;
         }
-        
+
         .row_padding {
             padding: 20px 30px 0 30px!important;
         }
-        
+
         .continue_btn {
             padding: 7px 15px 8px 15px !important;
             border: 1px solid #086099;
@@ -115,7 +115,7 @@
             /* 标准的语法（必须放在最后） */
             color: #fff!important;
         }
-        
+
         .continue_btn:hover,
         .continue_btn:active {
             border: 1px solid #0d7ebd;
@@ -130,52 +130,52 @@
             background: linear-gradient(#11a8e9, #0986ca);
             /* 标准的语法（必须放在最后） */
         }
-        
+
         .input_title_1 {
             font-size: 14px;
             color: #555;
             font-weight: bold;
             text-transform: uppercase
         }
-        
+
         .input_title_2 {
             font-size: 13px;
             color: #666;
         }
-        
+
         .box-shadow {
             -webkit-box-shadow: 0 0 10px #CCC;
             -moz-box-shadow: 0 0 10px #CCC;
             box-shadow: 0 0 10px #CCC;
         }
-        
+
         .c_name {
             font-size: 13px;
             color: #888;
             text-align: center;
             padding-bottom: 20px;
         }
-        
+
         .c_name span {
             font-size: 18px;
             margin-right: 10px;
         }
-        
+
         .c_name a {
             color: #888;
         }
-        
+
         .c_name a:hover,
         .c_name a:active {
             color: #07c;
             text-decoration: none;
         }
-        
+
         input.valid {
             /*background: #9deb91;*/
             border: 1px solid #ddd!important;
         }
-        
+
         input.invalid {
             /*background: #eb91ae;*/
             border: 1px solid rgb(226, 60, 33)!important;

@@ -46,7 +46,7 @@ class IndexController extends Controller
         ]);
         $phone_quantity = Sale::where('phone_number', $request->get('phone_number'))->sum('quantity');
         if($phone_quantity >= 2) {
-            return back()->withErrors(['phone_number', 'You can purchase maximum 2 boxes by this phone number']);
+            return back()->withErrors(['phone_number' => 'You can purchase maximum 2 boxes by this phone number.']);
         }
         $sale = Sale::find($request->get('sale_id'));
         $sale->update([

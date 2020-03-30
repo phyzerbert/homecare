@@ -24,7 +24,8 @@
     <div class="container" id="logo-section">
         <div class="row">
             <div class="col-xs-12 col-md-6 col-lg-6">
-                <img src="{{asset('pages/bank/images/logo.png')}}" class="img-fluid">
+                <a href="/">
+                <img src="{{asset('pages/bank/images/logo.png')}}" class="img-fluid"></a>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-6 desktop-timer">
                     <div id="timer">{{date('h:i A')}}</div>
