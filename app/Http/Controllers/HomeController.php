@@ -29,7 +29,7 @@ class HomeController extends Controller
         $data = Sale::orderBy('created_at', 'desc')->paginate(10);
         $mod = new Sale();
         $keyword = '';
-        if($request->get('keyword')) {
+        if($request->get('keyword') != '') {
             $keyword = $request->get('keyword');
             $mod->where(function($query) use ($keyword) {
                 $filter_bank_array = Bank::where('name', 'like', "%$keyword%")->pluck('id');
