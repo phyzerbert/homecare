@@ -29,7 +29,7 @@ class HomeController extends Controller
         $mod = new Sale();
         $keyword = '';
         if($request->get('keyword') != '') {
-            $keyword = $request->get('sa');
+            $keyword = $request->get('keyword');
             $mod->where(function($query) use ($keyword) {
                 $filter_bank_array = Bank::where('name', 'like', "%$keyword%")->pluck('id');
                 return $query->where('reference_no', 'like', "%$keyword%")
