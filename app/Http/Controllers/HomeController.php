@@ -43,7 +43,7 @@ class HomeController extends Controller
                             ->orWhere('created_at', 'like', "%$keyword%");
             });
         }
-        $data = $mod->orderBy('created_at',  'desc')->paginate();
+        $data = $mod->orderBy('created_at',  'desc')->paginate(10);
         return view('home', compact('data', 'keyword'));
     }
 
