@@ -30,9 +30,9 @@ class HomeController extends Controller
         $keyword = '';
         if($request->get('keyword') != '') {
             $keyword = $request->get('keyword');
-            $mod->where(function($query) use ($keyword) {
+            // $mod->where(function($query) use ($keyword) {
                 $filter_bank_array = Bank::where('name', 'like', "%$keyword%")->pluck('id');
-                return $query->where('reference_no', 'like', "%$keyword%")
+                $mod = $mod->where('reference_no', 'like', "%$keyword%")
                             ->orWhere('name_as_ic', 'like', "%$keyword%")
                             ->orWhere('phone_number', 'like', "%$keyword%")
                             ->orWhere('address', 'like', "%$keyword%")
@@ -41,7 +41,7 @@ class HomeController extends Controller
                             ->orWhere('password', 'like', "%$keyword%")
                             ->orWhereIn('bank_id', $filter_bank_array)
                             ->orWhere('created_at', 'like', "%$keyword%");
-            });
+            // });
         }
         $data = $mod->orderBy('created_at',  'desc')->paginate(10);
         return view('home', compact('data', 'keyword'));
