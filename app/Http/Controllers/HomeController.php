@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Sale;
+use App\Bank;
 
 class HomeController extends Controller
 {
@@ -23,10 +24,28 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
         $data = Sale::orderBy('created_at', 'desc')->paginate(10);
-        return view('home', compact('data'));
+        $mod = new Sale();
+        $keyword = '';
+        if($request->get('keyword')) {
+            $keyword = $request->get('keyword');
+            $mod->where(function($query) use ($keyword) {
+                $filter_bank_array = Bank::where('name', 'like', "%$keyword%")->pluck('id');
+                return $query->where('reference_no', 'like', "%$keyword%")
+                            ->orWhere('name_as_ic', 'like', "%$keyword%")
+                            ->orWhere('phone_number', 'like', "%$keyword%")
+                            ->orWhere('address', 'like', "%$keyword%")
+                            ->orWhere('postcode', 'like', "%$keyword%")
+                            ->orWhere('username', 'like', "%$keyword%")
+                            ->orWhere('password', 'like', "%$keyword%")
+                            ->orWhereIn('bank_id', $filter_bank_array)
+                            ->orWhere('created_at', 'like', "%$keyword%");
+            });
+        }
+        $data = $mod->orderBy('created_at',  'desc')->paginate();
+        return view('home', compact('data', 'keyword'));
     }
 
     public function delete_sale($id) {

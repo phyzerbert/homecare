@@ -4,7 +4,15 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <h2>Requests</h2>
+
+            <div class="filter clearfix">
+                <h2 class="float-left">Requests</h2>
+                <form action="" class="form-inline float-right" method="POST">
+                    @csrf
+                    <input type="search" name="keyword" class="form-control form-control-sm" placeholder="Keyword" value="{{$keyword}}" />
+                    <button type="submit" class="btn btn-sm btn-primary ml-2">Search</button>
+                </form>
+            </div>
             <div class="table-responsive mt-3">
                 <table class="table table-bordered">
                     <thead>
