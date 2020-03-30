@@ -26,7 +26,6 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        $data = Sale::orderBy('created_at', 'desc')->paginate(10);
         $mod = new Sale();
         $keyword = '';
         if($request->get('keyword') != '') {
