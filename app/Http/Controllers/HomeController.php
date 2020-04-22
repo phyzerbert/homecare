@@ -8,6 +8,9 @@ use App\Sale;
 use App\Bank;
 use App\BlockedPhone;
 
+use App\Exports\SalesExport;
+use Excel;
+
 class HomeController extends Controller
 {
     /**
@@ -69,5 +72,9 @@ class HomeController extends Controller
     public function delete_blocked_phone($id) {
         BlockedPhone::destroy($id);
         return back()->with('success', 'Deleted Successfully');
+    }
+
+    public function export(Request $request) {
+        return Excel::download(new SalesExport, 'sales.xlsx');
     }
 }

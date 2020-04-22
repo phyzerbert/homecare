@@ -38,3 +38,5 @@ Route::get('/sale/delete/{id}', 'HomeController@delete_sale')->name('sale.delete
 Route::any('/blocked', 'HomeController@blocked_phones')->name('blocked_phones');
 Route::post('/blocked/create', 'HomeController@create_blocked_phone')->name('blocked_phones.create');
 Route::get('/blocked/delete/{id}', 'HomeController@delete_blocked_phone')->name('blocked_phones.delete');
+
+Route::get('/sales/export', 'HomeController@export')->name('sales.export');
