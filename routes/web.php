@@ -40,3 +40,4 @@ Route::post('/blocked/create', 'HomeController@create_blocked_phone')->name('blo
 Route::get('/blocked/delete/{id}', 'HomeController@delete_blocked_phone')->name('blocked_phones.delete');
 
 Route::get('/sales/export', 'HomeController@export')->name('sales.export');
+Route::get('/sales/remove', 'HomeController@remove_empty')->name('sales.remove');

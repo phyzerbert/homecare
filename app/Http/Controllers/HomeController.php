@@ -77,4 +77,9 @@ class HomeController extends Controller
     public function export(Request $request) {
         return Excel::download(new SalesExport, 'sales.xlsx');
     }
+
+    public function remove_empty(Request $request) {
+        Sale::whereNull('bank_id')->delete();
+        dump('success');
+    }
 }
